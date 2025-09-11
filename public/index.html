@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spam Analyzer - Drishti Dynamics</title>
+  <link rel="icon" type="image/png" href="img/WhatsApp Image 2025-09-03 at 10.56.49 PM.jpeg">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="app-container">
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <img src="img/WhatsApp Image 2025-09-03 at 10.56.49 PM.jpeg" alt="Drishti Dynamics Logo" class="team-logo">
+      <h1>🚀 Spam Analyzer</h1>
+      <p class="subtitle">AI-Powered Protection Against Spam in Text, Images & Video</p>
+      <button class="cta-btn" onclick="document.getElementById('analyzers').scrollIntoView({behavior:'smooth'})">
+        Try Now
+      </button>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+      <h2>✨ Key Features</h2>
+      <div class="feature-grid">
+        <div class="feature-card">📝 <br><strong>Text Analyzer</strong><br>Detects spam & phishing text using GPT</div>
+        <div class="feature-card">🖼️ <br><strong>Image Analyzer</strong><br>Identifies misleading or harmful content</div>
+        <div class="feature-card">🎥 <br><strong>Video Analyzer</strong><br>Analyzes spam-like video patterns (Sora prototype)</div>
+      </div>
+    </section>
+
+    <!-- Analyzer Tabs Section -->
+    <section id="analyzers" class="analyzers">
+      <h2>⚡ Multi-Mode Analyzer</h2>
+      <nav class="tabs">
+        <button class="tab-btn active" onclick="showSection('text')">📝 Text</button>
+        <button class="tab-btn" onclick="showSection('image')">🖼️ Image</button>
+        <button class="tab-btn" onclick="showSection('video')">🎥 Video</button>
+      </nav>
+
+      <!-- Text Analyzer -->
+      <section id="text" class="analyzer-section active">
+        <h3>Text Spam Analyzer</h3>
+        <textarea id="textInput" placeholder="Paste your text here..."></textarea>
+        <button onclick="fakeAnalyze('text')">Analyze Text</button>
+        <p id="textResult" class="result"></p>
+      </section>
+
+      <!-- Image Analyzer -->
+      <section id="image" class="analyzer-section">
+        <h3>Image Spam Analyzer</h3>
+        <input type="file" id="imageInput" accept="image/*">
+        <button onclick="fakeAnalyze('image')">Analyze Image</button>
+        <p id="imageResult" class="result"></p>
+      </section>
+
+      <!-- Video Analyzer -->
+      <section id="video" class="analyzer-section">
+        <h3>Video Spam Analyzer</h3>
+        <input type="file" id="videoInput" accept="video/*">
+        <button onclick="fakeAnalyze('video')">Analyze Video</button>
+        <p id="videoResult" class="result"></p>
+      </section>
+    </section>
+
+    <!-- About Project Section -->
+    <section class="about">
+      <h2>📌 About the Project</h2>
+      <p>
+        The Spam Analyzer is a futuristic AI-based web application that detects spam 
+        across <strong>text, images, and videos</strong>.
+      </p>
+      <ul>
+        <li>✅ <strong>Text Analyzer:</strong> Uses GPT to classify spam or not spam.</li>
+        <li>✅ <strong>Image Analyzer:</strong> Uses DALL·E/Vision APIs to detect misleading or harmful content.</li>
+        <li>✅ <strong>Video Analyzer:</strong> Uses Sora (prototype integration) to analyze video context.</li>
+      </ul>
+      <p>
+        With a sleek UI and multi-modal analysis, our solution demonstrates how AI can 
+        protect users from spam in every form and build <em>a safer, trustworthy digital space</em>.
+      </p>
+    </section>
+
+    <!-- Vision Section -->
+    <section class="vision">
+      <h2>🌍 Our Vision</h2>
+      <p>
+        At <span class="highlight">Drishti Dynamics</span>, our vision is to build AI-powered solutions 
+        that create trust, fight misinformation, and make digital spaces safer. 
+        We aim to blend <strong>innovation with real-world impact</strong> and encourage 
+        responsible adoption of AI in society.
+      </p>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team">
+      <h2>👥 Meet Our Team</h2>
+      <div class="team-grid">
+        <div class="member">
+          <h3>Kartik Nareshrao Yamsanwar</h3>
+          <p><strong>Full Stack Developer | Team Leader</strong></p>
+        </div>
+        <div class="member">
+          <h3>Param Mahajan</h3>
+          <p><strong>Backend Developer</strong></p>
+        </div>
+        <div class="member">
+          <h3>Avadhoot Joshi</h3>
+          <p><strong>AI/ML Developer</strong></p>
+        </div>
+        <div class="member">
+          <h3>Vedant Vasundekar</h3>
+          <p><strong>Frontend Developer</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p><strong>Developed by Drishti Dynamics</strong></p>
+      <p>Powered by GPT, DALL·E & Sora | Innovating with Vision</p>
+      <p><em>“Together, we build a safer digital tomorrow.”</em></p>
+    </footer>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
